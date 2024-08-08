@@ -79,7 +79,7 @@ nmap N Nzzzv
 
 vmap p "_dP
 
-" Rename symbol under cursor
+" Refactor in file symbol under cursor
 map <c-s-r> :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
 
 " Remove highlight search results with space in normal mode
@@ -87,6 +87,10 @@ nmap <space> :noh<CR>
 
 " Change word will only cw command instead of ciw
 nmap cw ciw
+nmap yw yiw
+
+nmap d dd
+nmap y yy
 
 " Status line
 set laststatus=2
