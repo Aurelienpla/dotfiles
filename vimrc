@@ -43,7 +43,8 @@ imap <c-s> <Esc>:w<CR>a
 
 "pour compiler (commande :make) avec CTRL + m
 "nmap <c-m> :wa<CR>:make<CR>
-nmap <c-m> :w<CR>:!python3 "%"<CR>
+nmap <CR> :wa<CR>:qtrun<CR>
+"nmap <c-m> :w<CR>:!python3 "%"<CR>
 "imap <c-w> <Esc>:w<CR>:make<CR>
 
 "switch to the compilation error with 
