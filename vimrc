@@ -95,7 +95,7 @@ nmap vw viw
 "nmap y yy
 
 " add line with enter in normal mode
-#nmap <CR> o
+"nmap <CR> o
 
 " Status line
 set laststatus=2
