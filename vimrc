@@ -43,7 +43,7 @@ imap <c-s> <Esc>:w<CR>a
 
 "pour compiler (commande :make) avec CTRL + m
 "nmap <c-m> :wa<CR>:make<CR>
-nmap <CR> :wa<CR>:qtrun<CR>
+"nmap <CR> :wa<CR>:qtrun<CR>
 "nmap <c-m> :w<CR>:!python3 "%"<CR>
 "imap <c-w> <Esc>:w<CR>:make<CR>
 
@@ -87,10 +87,15 @@ nmap <space> :noh<CR>
 
 " Change word will only cw command instead of ciw
 nmap cw ciw
+nmap dw diw
 nmap yw yiw
+nmap vw viw
 
-nmap d dd
-nmap y yy
+"nmap d dd
+"nmap y yy
+
+" add line with enter in normal mode
+#nmap <CR> o
 
 " Status line
 set laststatus=2
