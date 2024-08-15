@@ -25,6 +25,7 @@ set matchtime=2
 filetype indent on
 set incsearch
 set scrolloff=5
+set incsearch
 
 "---------------- Keybinds------------------"
 "Allow ada compilation (gnatmake) on make
@@ -61,9 +62,6 @@ imap <c-space> <c-p>
 vmap <tab> ==
 nmap <tab> ==
 
-" Sélectionner tout
-map <C-a> ggVG
-
 " Copier dans le buffer de copie systeme
 vmap <C-c> "+y
 " Couper dans le buffer de copie systeme
@@ -77,11 +75,8 @@ vmap <c-Up>   :m '<-2<CR>gv=gv
 
 vmap p "_dP
 
-" Refactor in file symbol under cursor
-map <c-s-r> :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
-
 " Remove highlight search results with space in normal mode
-nmap <space> :noh<CR>
+nmap <esc> :noh<CR>
 
 " Change word will only cw command instead of ciw
 nmap cw ciw
@@ -92,6 +87,9 @@ nmap yw yiw
 " add line with enter in normal mode
 "nmap <CR> o
 "nmap <s-CR> O
+
+" replace world with rw
+nmap rw viwp
 
 " Status line
 set laststatus=2
